@@ -11,13 +11,13 @@ This project implements an ETL pipeline that scrapes live flight data from Radar
 ## Database Overview
 The database stores flight information, including attributes like flight number, latitude, longitude, altitude, aircraft type, ground speed, origin, destination, and airline. Below is an example of the data stored in the flight_data table:
 
-!
+![image](https://github.com/user-attachments/assets/85edc87d-0c38-4cb5-b61c-02cd644dbb92)
 
 ## Airflow DAG Overview
 
 The ETL process is managed by Apache Airflow through a Directed Acyclic Graph (DAG). Below is a visual representation of the DAG, illustrating the sequence of tasks involved in the ETL process:
 
-!
+![image](https://github.com/user-attachments/assets/bafa83cb-e73b-4095-8d18-6c3b08fee266)
 
 ### DAG Tasks
 
