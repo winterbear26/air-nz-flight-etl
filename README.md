@@ -1,6 +1,6 @@
 # Project: Air New Zealand Live Flight ETL 
 
-This project implements an ETL pipeline that scrapes live flight data from Radarbox, processes it, and stores it in a PostgreSQL database. The pipeline is orchestrated using Apache Airflow, allowing for scheduled execution and task management.
+This project implements an ETL pipeline that scrapes live flight data from Radarbox, processes it, and stores it in a PostgreSQL database. The pipeline is orchestrated using Apache Airflow, allowing for scheduled execution and task management. The scheduler is set to run every minute to ensure that the data is up-to-date.
 
 
 ## Technologies Used
@@ -36,3 +36,6 @@ The tasks are executed in the following order:
 - The **extract_flight_data** task runs first.
 - Once data extraction is complete, the **transform_flight_data** task executes.
 - Finally, the **load_flight_data** task loads the processed data into the database.
+
+### Scheduler
+The ETL process is scheduled to run every minute, ensuring that the flight data remains current and accurate.
